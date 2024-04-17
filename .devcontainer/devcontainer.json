@@ -29,11 +29,13 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"prisma.prisma"
+				"prisma.prisma",
+				"ms-vsliveshare.vsliveshare",
+				"GitHub.copilot"
 			]
 		}
 	}
-
+	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
