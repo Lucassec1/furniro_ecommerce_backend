@@ -30,8 +30,7 @@
 		"vscode": {
 			"extensions": [
 				"prisma.prisma",
-				"ms-vsliveshare.vsliveshare",
-				"GitHub.copilot"
+				"ms-vsliveshare.vsliveshare"
 			]
 		}
 	}
