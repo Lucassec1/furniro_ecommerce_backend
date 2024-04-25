@@ -7,7 +7,7 @@ export type CategoryFilter = string;
 
 export class CategorySearchParams extends SearchParams<CategoryFilter> {}
 
-export class CategorySearchResult extends SearchResult {}
+export class CategorySearchResult extends SearchResult<Category> {}
 
 export interface ICategoryRepository
   extends ISearchableRepository<

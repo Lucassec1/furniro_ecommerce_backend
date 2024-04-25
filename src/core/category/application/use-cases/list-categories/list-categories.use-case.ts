@@ -14,7 +14,6 @@ import {
   CategoryOutput,
   CategoryOutputMapper,
 } from '../common/category-output';
-import { Category } from 'src/core/category/domain/category.entity';
 
 export interface ListCategoriesInput {
   page?: number;
@@ -40,7 +39,7 @@ export class ListCategoriesUseCase
   private toOutput(searchResult: CategorySearchResult): ListCategoriesOutput {
     const { items: _items } = searchResult;
     const items = _items.map((item) => {
-      return CategoryOutputMapper.toOutput(item as Category);
+      return CategoryOutputMapper.toOutput(item);
     });
     return PaginationOutputMapper.toOutput(items, searchResult);
   }

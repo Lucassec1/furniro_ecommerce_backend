@@ -12,8 +12,9 @@ import { CategoryModelMapper } from './category-model-mapper';
 export class CategorySequelizeRepository implements ICategoryRepository {
   sortableFields: string[] = ['name', 'created_at'];
   orderBy = {
-    mysql: {
-      name: (sort_dir: SortDirection) => literal(`binary name ${sort_dir}`),
+    postgres: {
+      name: (sort_dir: SortDirection) =>
+        literal(`name COLLATE "C" ${sort_dir}`),
     },
   };
 
