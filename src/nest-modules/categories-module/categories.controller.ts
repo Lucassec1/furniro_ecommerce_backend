@@ -73,7 +73,7 @@ export class CategoriesController {
 
   @HttpCode(204)
   @Delete(':id')
-  async remove(@Param('id') id: string) {
+  remove(@Param('id') id: string) {
     return this.deleteUseCase.execute({ id });
   }
 
